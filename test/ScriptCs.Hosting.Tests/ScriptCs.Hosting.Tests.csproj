@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\ScriptCsAutoDataAttribute.cs" Link="ScriptCsAutoDataAttribute.cs" />
+    <Compile Include="..\ScriptCsMoqCustomization.cs" Link="ScriptCsMoqCustomization.cs" />
+    <Compile Include="..\TestLogProvider.cs" Link="TestLogProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoFixture.AutoMoq" />
+    <PackageReference Include="AutoFixture.Xunit2" />
+    <PackageReference Include="Microsoft.TestPlatform.ObjectModel" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="Should" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ScriptCs.Contracts\ScriptCs.Contracts.csproj" />
+    <ProjectReference Include="..\..\src\ScriptCs.Core\ScriptCs.Core.csproj" />
+    <ProjectReference Include="..\..\src\ScriptCs.Hosting\ScriptCs.Hosting.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.Composition" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>
