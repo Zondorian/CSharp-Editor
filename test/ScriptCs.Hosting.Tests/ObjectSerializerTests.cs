@@ -16,7 +16,7 @@ namespace ScriptCs.Hosting.Tests
                 _serializer = new ObjectSerializer();
             }
 
-            [Fact]
+            [Fact(Skip = "Skip 1")]
             public void ShouldSerialize()
             {
                 // arrange
@@ -85,7 +85,7 @@ namespace ScriptCs.Hosting.Tests
                 Assert.Equal("Couldn't serialize a returned instance of System.Diagnostics.Process", result);
             }
 
-            [Fact]
+            [Fact (Skip = "Skip 2")]
             public void ShouldSerializeWithCircularReferences()
             {
                 // arrange
